@@ -1,109 +1,90 @@
 💐 Perfumique — AI-Powered Perfume E-Commerce Website
 
-Perfumique is a modern perfume e-commerce web application that combines AI-based image recognition with a smooth shopping experience.
-Users can search perfumes by text or upload a perfume image to find visually similar products — powered by TensorFlow.js MobileNet.
+Perfumique is a modern perfume e-commerce website that combines AI-based image recognition with a beautiful shopping interface.
+Users can search perfumes using text or by uploading an image, powered by TensorFlow.js MobileNetV2.
 
 🛍️ Features
 
-🔎 Smart Search Bar — Search products using text.
+Smart text-based product search
 
-🧠 AI Image Search — Upload an image and get similar perfumes recommended by an AI model.
+AI image search using TensorFlow.js
 
-🛒 Add to Cart — Add your favorite perfumes and view them on a separate cart page.
+Add to Cart option
 
-👤 User Authentication — Sign Up, Login, and Logout system using localStorage.
+Login, Signup, and Logout system
 
-🖼️ Dynamic Product Display — “Just Arrived” and “Featured Products” sections dynamically rendered.
+Just Arrived and Featured Products
 
-✉️ Contact & About Sections — Includes company info and a working contact form layout.
+From Our Blog and Testimonials
 
-🌸 Responsive UI — Fully styled for a clean and elegant perfume brand experience.
+Top Brands, About Us, and Contact Sections
+
+Responsive perfume-themed design
 
 🧩 Tech Stack
 
 Frontend: HTML5, CSS3, JavaScript
 
-AI Integration: TensorFlow.js + MobileNet (for image-based product search)
+AI Integration: TensorFlow.js + MobileNetV2
 
-Storage: LocalStorage (for authentication and cart data)
+Storage: LocalStorage
 
-⚙️ How It Works
+⚙️ Working Process
 
-User Signup/Login:
+User Authentication: Signup, login, and logout using localStorage
 
-New users register with name, email, and password.
+AI Image Search: Upload a perfume image → AI model finds similar products
 
-Returning users can log in and access all features.
+Cart System: Add, view, and remove products
 
-AI Image Search:
+Dynamic Sections: Products and brands displayed dynamically
 
-Users upload an image of a perfume bottle.
+Logout: Redirects to login page when user logs out
 
-The app uses the MobileNet model to extract image features.
-
-It compares the uploaded image with product images and finds the most similar ones.
-
-Cart Functionality:
-
-Users can add products to the cart.
-
-Cart contents are stored in localStorage.
-
-The cart page allows product removal or continuing shopping.
-
-Logout:
-
-Logs the user out and redirects to the login page.
-
-🧠 AI Model
+🧠 AI Model Integration
 
 Model Used: MobileNetV2 (TensorFlow.js)
 
-Purpose: Image feature extraction for similarity comparison
+Purpose: Image similarity detection
 
-Logic:
+Process:
 
-Calculates both shape and color similarity between uploaded and store images.
+Extracts visual features from product images
 
-Ranks products based on combined similarity score.
+Calculates shape and color similarity
+
+Displays top 4 visually matching perfumes
 
 📁 Folder Structure
 Perfumique/
 │
-├── index.html         # Main website
+├── index.html         # Main homepage
 ├── login.html         # Login page
 ├── signup.html        # Signup page
 ├── cart.html          # Cart page
 ├── products.js        # Product data
-├── script.js          # JavaScript for interactivity
-├── style.css          # Styling for all pages
-└── images/            # Perfume & brand images
+├── script.js          # Website interactivity
+├── style.css          # Styling
+└── images/            # Perfume and brand images
 
-📸 Preview
+📸 Website Sections
 
-Homepage Sections:
-
-AI-based image search
+Search by text and image
 
 Just Arrived products
 
 Featured products
 
+From Our Blog
+
 Customer testimonials
 
 Brand logos
 
-About & Contact sections
-
-Cart Page:
-
-Clean layout for viewing added perfumes
-
-Option to remove products or continue shopping
-
+About and Contact sections
 
 👩‍💻 Developer
 
 Name: Nagalakshmi M
-Project: Perfumique — AI Integrated Perfume E-commerce Website
+Project Title: Perfumique — AI Integrated Perfume E-commerce Website
 Year: 2025
