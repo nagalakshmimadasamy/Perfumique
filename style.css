@@ -11,12 +11,12 @@ body
 }
 
 nav {
-  background: linear-gradient(to right, #fcbacb, #ffd6e0); /* Soft pink gradient */
+  background: linear-gradient(to right, #fcbacb, #ffd6e0); 
   text-transform: uppercase;
   color: black;
   height: 60px;
   padding: 15px 30px;
-  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4); /* Light pink glow */
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
   display: flex;
   align-items:center;
   justify-content:space-between;
@@ -86,7 +86,7 @@ li:hover {
 }
 
 
-/* Input border and focus glow */
+
 input {
   width: 60%;
   padding: 15px;
@@ -192,7 +192,7 @@ h1 {
 {
     position: relative;
     height: 70vh;
-    background-image: url(images/hey.jpg);
+    background-image: url(images/banner.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -251,7 +251,7 @@ h1 {
 }
 
 
-/* Simple fade-up animation */
+
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -1154,5 +1154,6 @@ input[type="file"] {
 .product-results {
   margin-top: 30px;
 }
+
 
 
