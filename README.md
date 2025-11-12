@@ -1,53 +1,109 @@
-# 🌸 Perfumique – AI-Powered Perfume Store Website
+💐 Perfumique — AI-Powered Perfume E-Commerce Website
 
-**Perfumique** is a modern, elegant, and AI-powered e-commerce website for perfume lovers.  
-It lets users search perfumes by **name or image**, explore collections, and manage a shopping cart.
+Perfumique is a modern perfume e-commerce web application that combines AI-based image recognition with a smooth shopping experience.
+Users can search perfumes by text or upload a perfume image to find visually similar products — powered by TensorFlow.js MobileNet.
 
----
+🛍️ Features
 
-## ✨ Features
+🔎 Smart Search Bar — Search products using text.
 
-### 🧠 AI-Based Search
-- Upload an image, and the website finds visually **similar perfumes** using **TensorFlow.js + MobileNet**.
-- AI compares both **color & visual similarity** of perfume bottles.
+🧠 AI Image Search — Upload an image and get similar perfumes recommended by an AI model.
 
-### 🔍 Text Search
-- Search perfumes instantly by name or description.
+🛒 Add to Cart — Add your favorite perfumes and view them on a separate cart page.
 
-### 🛍️ Product Sections
-- **Just Arrived** and **Featured Products** sections display dynamically loaded perfumes.
-- Each product has a **description**, **price**, and an **Add to Cart** button.
+👤 User Authentication — Sign Up, Login, and Logout system using localStorage.
 
-### 🧾 Shopping Cart
-- Products can be added to the cart and stored using **localStorage**.
-- You can view added products, remove items, and continue shopping.
+🖼️ Dynamic Product Display — “Just Arrived” and “Featured Products” sections dynamically rendered.
 
-### 📰 Blog Section
-- Displays perfume-related articles for visitors to explore.
+✉️ Contact & About Sections — Includes company info and a working contact form layout.
 
-### 💬 Testimonials
-- Realistic customer feedback to enhance trust and engagement.
+🌸 Responsive UI — Fully styled for a clean and elegant perfume brand experience.
 
-### 🏷️ Brand Showcase
-- Carousel of top perfume brands like Chanel, Dior, Gucci, Versace, and more.
+🧩 Tech Stack
 
-### 📩 Contact Form
-- Simple contact section for customer inquiries and messages.
+Frontend: HTML5, CSS3, JavaScript
 
----
+AI Integration: TensorFlow.js + MobileNet (for image-based product search)
 
-## 🧠 Tech Stack
+Storage: LocalStorage (for authentication and cart data)
 
-| Technology | Purpose |
-|-------------|----------|
-| **HTML5** | Website structure |
-| **CSS3** | Styling and animations |
-| **JavaScript (ES6)** | Dynamic UI and interactivity |
-| **TensorFlow.js** | AI image recognition |
-| **MobileNet** | Pre-trained image classification model |
-| **LocalStorage** | Cart persistence |
+⚙️ How It Works
 
----
+User Signup/Login:
 
-## 🧩 Project Structure
+New users register with name, email, and password.
 
+Returning users can log in and access all features.
+
+AI Image Search:
+
+Users upload an image of a perfume bottle.
+
+The app uses the MobileNet model to extract image features.
+
+It compares the uploaded image with product images and finds the most similar ones.
+
+Cart Functionality:
+
+Users can add products to the cart.
+
+Cart contents are stored in localStorage.
+
+The cart page allows product removal or continuing shopping.
+
+Logout:
+
+Logs the user out and redirects to the login page.
+
+🧠 AI Model
+
+Model Used: MobileNetV2 (TensorFlow.js)
+
+Purpose: Image feature extraction for similarity comparison
+
+Logic:
+
+Calculates both shape and color similarity between uploaded and store images.
+
+Ranks products based on combined similarity score.
+
+📁 Folder Structure
+Perfumique/
+│
+├── index.html         # Main website
+├── login.html         # Login page
+├── signup.html        # Signup page
+├── cart.html          # Cart page
+├── products.js        # Product data
+├── script.js          # JavaScript for interactivity
+├── style.css          # Styling for all pages
+└── images/            # Perfume & brand images
+
+📸 Preview
+
+Homepage Sections:
+
+AI-based image search
+
+Just Arrived products
+
+Featured products
+
+Customer testimonials
+
+Brand logos
+
+About & Contact sections
+
+Cart Page:
+
+Clean layout for viewing added perfumes
+
+Option to remove products or continue shopping
+
+
+👩‍💻 Developer
+
+Name: Nagalakshmi M
+Project: Perfumique — AI Integrated Perfume E-commerce Website
+Year: 2025
