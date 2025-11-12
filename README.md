@@ -84,3 +84,7 @@ Perfumique/
 **Name:** Nagalakshmi M 
 **Project Title:** *Perfumique – AI Integrated Perfume E-commerce Website*  
 **Year:** 2025
+
+### 📸 Image Credits
+Images and design assets used in this project are sourced from [Freepik](https://www.freepik.com) under their free license (for demo purposes only).
+
