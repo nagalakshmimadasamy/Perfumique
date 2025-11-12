@@ -15,7 +15,10 @@
     <li><a href="#products">Product</a> |</li>
     <li><a href="#about">About Us</a> |</li>
     <li><a href="#contact">Contact Us</a></li>
+    
+
   </ul>
+  <button id="logoutBtn" class="logout-btn">Logout</button>
 </nav>
 
     </div>
@@ -324,5 +327,56 @@ console.log(
 };
 </script>
 
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  // Retrieve stored signup info
+  const storedUser = JSON.parse(localStorage.getItem("user"));
+
+  if (!storedUser) {
+    alert("No user found. Please sign up first!");
+    return;
+  }
+
+  if (email === storedUser.email && password === storedUser.password) {
+    
+    localStorage.setItem("loggedIn", "true");
+    alert(`Welcome back, ${storedUser.name}! 🌸`);
+    window.location.href = "index.html"; 
+  } else {
+    alert("Invalid email or password.");
+  }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const logoutBtn = document.getElementById("logoutBtn");
+
+  // If logout button doesn't exist, stop here
+  if (!logoutBtn) return;
+
+  // Check login status
+  const isLoggedIn = localStorage.getItem("loggedIn") === "true";
+
+  // Show or hide logout button
+  logoutBtn.style.display = isLoggedIn ? "inline-block" : "none";
+
+  // Handle logout click
+  logoutBtn.addEventListener("click", () => {
+    localStorage.setItem("loggedIn", "false");
+    alert("You have been logged out successfully!");
+    window.location.href = "login.html"; 
+  });
+});
+</script>
+
+
+
 </body>
 </html>
+
