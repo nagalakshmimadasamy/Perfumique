@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+  <h1>Perfumique</h1>
+  <ul>
+    <li><a href="#home">Home</a> |</li>
+    <li><a href="#products">Product</a> |</li>
+    <li><a href="#about">About Us</a> |</li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+    </div>
+
+
+    
+
+    <div class="searchbar">
+    <input type="text" placeholder="Search" id="searchInput">
+    <button id="searchBtn">Search</button>
+</div>
+<section class="image-search">
+  <div class="image-search-inner">
+    <h2 class="image-search-title">Search by Image</h2>
+    <p class="image-search-sub">Upload a perfume image to find visually similar products from our collection.</p>
+
+    <div class="image-upload-box">
+      <label for="imageInput" class="upload-label">
+        <span class="upload-icon">📸</span>
+        <span class="upload-text">Choose or Drop an Image</span>
+      </label>
+      <input type="file" id="imageInput" accept="image/*" />
+      <button id="imageSearchBtn" class="find-btn">
+        <span class="icon">🔍</span> Find Similar
+      </button>
+    </div>
+
+    <div id="imagePreview" class="image-preview"></div>
+    <div id="imageSearchResults" class="product-results"></div>
+  </div>
+</section>
+
+
+
+   <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>PERFUMIQUE</h1>
+        <p>Discover the scent that defines your elegance</p>
+        <a href="#products" class="shop-btn">Shop Now</a>
+    </div>
+</section>
+
+
+    <!-- Arrived Section -->
+    <h2 id = "products" class="section-title">Just Arrived</h2>
+    <div class="product-container">
+        <button class="arrow left-arrow">&#10094;</button>
+        <div class="product-track">
+        </div>
+        <button class="arrow right-arrow">&#10095;</button>
+    </div>
+    <br>
+
+    <!-- Featured Products Section -->
+    <h2 class="section-title">Featured Products</h2>
+    <div class="product-container">
+        <button class="arrow left-arrow">&#10094;</button>
+        <div class="product-track">
+        </div>
+        <button class="arrow right-arrow">&#10095;</button>
+    </div>
+    <br>
+
+    <section class="blog-section">
+  <h2 class="section-title">From Our Blog</h2>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="images/blog1.avif" alt="Perfume Blog 1">
+      <div class="blog-content">
+        <p class="meta">by Perfumique Team on Feb 1, 2025</p>
+        <h3>The Art of Choosing Your Signature Scent</h3>
+        <p>Finding your perfect perfume is more than just fragrance — it’s about expressing your personality through scent.</p>
+        <a href="#" class="blog-btn">View Details</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/blog2.avif" alt="Perfume Blog 2">
+      <div class="blog-content">
+        <p class="meta">by Perfumique Experts on Feb 12, 2025</p>
+        <h3>Top 5 Perfumes for Every Occasion</h3>
+        <p>Whether it’s a date night or a business meeting, discover the scents that match your mood and moment.</p>
+        <a href="#" class="blog-btn">View Details</a>
+      </div>
+    </div>
+
+    
+</section>
+
+
+    <!-- Testimonials Section -->
+    <div class="testimonials">
+        <h2>What Our Customers Say</h2>
+
+        <div class="testimonial-box">
+            <img src="images/user1.avif" alt="Priya" class="profile-img">
+            <p>"Lavender Bliss is my favorite! The fragrance lasts all day and makes me feel calm."</p>
+            <h4>- Priya S.</h4>
+        </div>
+
+        <div class="testimonial-box">
+            <img src="images/user2.avif" alt="Arjun" class="profile-img">
+            <p>"Golden Aura feels so luxurious. Perfect for special occasions!"</p>
+            <h4>- Arjun K.</h4>
+        </div>
+
+        <div class="testimonial-box">
+            <img src="images/user3.avif" alt="Sneha" class="profile-img">
+            <p>"I love the variety at Perfumique. Rose Whisper is now my go-to perfume."</p>
+            <h4>- Sneha M.</h4>
+        </div>
+    </div>
+
+    <!-- Brands Section -->
+    <div class="brands-section">
+        <h2>Our Top Brands</h2>
+        <div class="brands-container">
+            <div class="brand"><img src="images/b1.avif" alt="Chanel"></div>
+            <div class="brand"><img src="images/b2.avif" alt="Dior"></div>
+            <div class="brand"><img src="images/b3.avif" alt="Gucci"></div>
+            <div class="brand"><img src="images/b4.avif" alt="Versace"></div>
+            <div class="brand"><img src="images/b5.avif" alt="Bvlgari"></div>
+            <div class="brand"><img src="images/b6.avif" alt="Calvin Klein"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about">
+        <h1>About Us</h1>
+        <p>
+            Welcome to <strong>Perfumique</strong> — where every fragrance is a whisper of elegance and emotion.  
+            We believe perfume is not just a scent, but a story you wear. Each bottle we create is crafted 
+            with love, blending rare ingredients and timeless artistry to bring you an unforgettable experience.  
+            <br><br>
+            Whether you’re seeking the sparkle of confidence, the warmth of comfort, or the charm of romance — 
+            Perfumique has a scent that speaks your soul.  
+            Let your presence linger beautifully, wherever you go.
+        </p>
+    </div>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Whether you have a question about our perfumes, shipping, or anything else — our team is ready to help.</p>
+      <ul>
+        <li id="add"><strong>Address:</strong> 123 Aroma Street, Chennai, India</li>
+        <li id="email"><strong>Email:</strong> support@perfumique.com</li>
+        <li id="phone"><strong>Phone:</strong> +91 91111 12232</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-send">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Perfume Paradise | All Rights Reserved</p>
+  </div>
+</section>
+
+
+    <div class="cart-popup" id="cartPopup">
+  <h3>Your Cart</h3>
+  <ul id="cartItems"></ul>
+  <button id="closeCart">Close</button>
+</div>
+
+
+    <script src="script.js"></script>
+
+    <!-- TensorFlow.js + MobileNet AI Model -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+<script type="module">
+import { products } from "./products.js";
+
+let model;
+
+// Utility functions to calculate color similarity
+function getAverageColor(imgElement) {
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+  canvas.width = imgElement.width;
+  canvas.height = imgElement.height;
+  ctx.drawImage(imgElement, 0, 0, canvas.width, canvas.height);
+  const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+
+  let r = 0, g = 0, b = 0;
+  for (let i = 0; i < data.length; i += 4) {
+    r += data[i];
+    g += data[i + 1];
+    b += data[i + 2];
+  }
+  const pixelCount = data.length / 4;
+  return [r / pixelCount, g / pixelCount, b / pixelCount];
+}
+
+function colorSimilarity(c1, c2) {
+  return 1 - Math.sqrt(
+    Math.pow(c1[0] - c2[0], 2) +
+    Math.pow(c1[1] - c2[1], 2) +
+    Math.pow(c1[2] - c2[2], 2)
+  ) / 441.67;
+}
+
+// Initialize the AI model and load product data
+window.onload = async () => {
+  console.log("Loading AI Model...");
+  model = await mobilenet.load({ version: 2, alpha: 1.0 });
+  console.log("✅ MobileNetV2 Loaded Successfully!");
+
+  // Extract AI features + color from each product image
+  for (let product of products) {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.src = product.img;
+    await new Promise(resolve => {
+      img.onload = async () => {
+        try {
+          product.features = await model.infer(img, true);
+          product.color = getAverageColor(img);
+          resolve();
+        } catch {
+          resolve();
+        }
+      };
+    });
+  }
+  console.log("🧠 Product Features Extracted.");
+
+  // Image upload & search button
+  document.getElementById("imageSearchBtn").addEventListener("click", async () => {
+    const input = document.getElementById("imageInput");
+    const previewDiv = document.getElementById("imagePreview");
+    const resultDiv = document.getElementById("imageSearchResults");
+
+    if (!input.files[0]) {
+      alert("Please upload an image first!");
+      return;
+    }
+
+    previewDiv.innerHTML = "";
+    resultDiv.innerHTML = "";
+
+    const reader = new FileReader();
+    reader.onload = async function (e) {
+      const uploadedImg = new Image();
+      uploadedImg.src = e.target.result;
+      uploadedImg.onload = async () => {
+        previewDiv.innerHTML = `<img src="${uploadedImg.src}" style="max-width:180px;border-radius:10px;box-shadow:0 4px 15px rgba(214,51,132,0.2)">`;
+
+        const uploadedFeatures = await model.infer(uploadedImg, true);
+        const uploadedColor = getAverageColor(uploadedImg);
+        const scores = [];
+
+        for (let p of products) {
+  if (!p.features || !p.color) continue;
+
+  const shapeSim = tf.tidy(() => {
+    const a = uploadedFeatures.flatten();
+    const b = p.features.flatten();
+    return a.dot(b).dataSync()[0];
+  });
+
+  const colorSim = colorSimilarity(uploadedColor, p.color);
+  const finalScore = 0.7 * shapeSim + 0.3 * colorSim;
+
+  scores.push({ ...p, score: finalScore });
+}
+
+scores.sort((a, b) => b.score - a.score);
+const topMatches = scores.slice(0, 4);
+
+console.log(
+  "Top Matches:",
+  topMatches.map(p => `${p.name} (${p.score.toFixed(3)})`)
+);
+
+        resultDiv.innerHTML = `
+          <h3 style="color:#d63384;margin-bottom:20px;">Top Matching Products</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+            ${topMatches.map(p => `
+              <div class="box" style="width:230px;">
+                <img src="${p.img}" alt="${p.name}">
+                <p><strong>${p.name}</strong><br>${p.desc}</p>
+                <p class="price">₹${p.price}</p>
+                <button class="add-cart-btn">Add to Cart</button>
+              </div>
+            `).join("")}
+          </div>
+        `;
+      };
+    };
+    reader.readAsDataURL(input.files[0]);
+  });
+};
+</script>
+
+</body>
+</html>
